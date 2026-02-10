@@ -197,5 +197,15 @@
         .extras{
             display: none;
         }
+        .cont{
+            .food-item{
+                .img{
+                    img{
+                        pointer-events: none;
+                        cursor: default;
+                    }
+                }
+            }
+        }
     }
 }
