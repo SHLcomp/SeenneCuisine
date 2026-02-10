@@ -1,0 +1,201 @@
+.foods {
+    padding-block: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    a{
+        position: absolute;
+        top: 100%;
+        margin-top: 13em;
+        color: var(--txt-accent);
+    }
+    .filtering {
+        z-index: 300;
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2em;
+            list-style: none;
+            flex-wrap: wrap;
+
+            li {
+                cursor: pointer;
+
+                &::first-letter {
+                    text-transform: uppercase;
+                }
+
+                &.active {
+                    color: var(--txt-accent);
+                }
+            }
+        }
+    }
+
+
+    .extras {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100vh;
+        width: 100vw;
+        position: absolute !important;
+
+        .top {
+            
+            width: 100%;
+            .left {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding-inline: 20px;
+                gap: 1em;
+                position: relative;
+                left: 6vw;
+
+                img {
+                    max-width: 30px;
+                    position: relative;
+
+                    &:nth-child(2) {
+                        left: 2vw;
+                    }
+                }
+            }
+
+            .right {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding-inline: 20px;
+                gap: 1em;
+                position: relative;
+                left: 90%;
+
+                img {
+                    max-width: 30px;
+                    position: relative;
+
+                    &:nth-child(2) {
+                        right: 2vw;
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            width: 100%;
+            .left {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding-inline: 20px;
+                gap: 1em;
+                position: relative;
+                left: 6vw;
+
+                img {
+                    max-width: 30px;
+                    position: relative;
+
+                    &:nth-child(2) {
+                        left: 2vw;
+                    }
+                }
+            }
+
+            .right {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding-inline: 20px;
+                gap: 1em;
+                position: relative;
+                left: 90%;
+
+                img {
+                    max-width: 30px;
+                    position: relative;
+
+                    &:nth-child(2) {
+                        right: 2vw;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    .cont {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2em;
+        margin-top: 10vh;
+        padding-inline: 4vw;
+        width: 100vw;
+        height: 100vh;
+        .food-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            height: 400px;
+
+            .img {
+                width: 300px;
+                height: 300px;
+                transition: 1s;
+
+                // transform: rotate(90deg);
+                &:hover {
+                    transform: rotate(180deg);
+                }
+
+                img {
+                    width: 100%;
+
+                }
+            }
+
+            .text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                margin-top: 10px;
+                background: var(--main-bg-light);
+                padding-block: 5px;
+                max-width: 300px;
+
+                p {
+                    width: 70%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:600px) {
+    .foods {
+        .filtering {
+            ul {
+                gap: 1em;
+            }
+        }
+        .extras{
+            display: none;
+        }
+    }
+}
