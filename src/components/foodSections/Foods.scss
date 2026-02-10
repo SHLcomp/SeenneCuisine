@@ -5,23 +5,6 @@
     justify-content: center;
     align-items: center;
 
-    a {
-        color: var(--txt-accent);
-        margin-top: 10em; // small spacing below content
-        position: absolute;
-        top: 100%;
-        text-decoration: none;
-        font-size: 1.2rem;
-        padding: 0.8em 1.5em;
-        border: 2px solid var(--txt-accent);
-        border-radius: 8px;
-        transition: 0.3s;
-
-        &:hover {
-            background: var(--txt-accent);
-            color: var(--txt-light);
-        }
-    }
 
     .filtering {
         z-index: 300;
@@ -154,8 +137,26 @@
         margin-top: 10vh;
         padding-inline: 4vw;
         width: 100vw;
-        height: 100vh;
+        height: auto;
         position: relative;
+
+        a {
+            color: var(--txt-accent);
+            margin-top: 2em; // small spacing below content
+            position: absolute;
+            top: 100%;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 0.8em 1.5em;
+            border: 2px solid var(--txt-accent);
+            border-radius: 8px;
+            transition: 0.3s;
+
+            &:hover {
+                background: var(--txt-accent);
+                color: var(--txt-light);
+            }
+        }
 
         .food-item {
             display: flex;
@@ -192,9 +193,14 @@
                 padding-block: 5px;
                 max-width: 300px;
 
+                h3 {
+                    color: var(--txt-accent);
+                }
+
                 p {
                     width: 70%;
                     text-align: center;
+                    font-size: small;
                 }
             }
         }
@@ -203,28 +209,30 @@
 
 
 @media (max-width: 600px) {
-  .foods {
-    .filtering {
-      margin-top: 10vh; // smaller spacing
-      ul {
-        gap: 1em;
-      }
-    }
+    .foods {
+        .filtering {
+            margin-top: 10vh; // smaller spacing
 
-    .extras {
-      display: none;
-    }
+            ul {
+                gap: 1em;
+            }
+        }
 
-    .cont {
-        height: 100%;
-      .food-item {
-        pointer-events: none;
-      }
-    }
+        .extras {
+            display: none;
+        }
 
-    a {
-      position: absolute; 
-      margin-top: 2em; // simple spacing from content
+        .cont {
+            height: 100%;
+
+            .food-item {
+                pointer-events: none;
+            }
+        }
+
+        a {
+            position: absolute;
+            margin-top: 2em; // simple spacing from content
+        }
     }
-  }
 }
