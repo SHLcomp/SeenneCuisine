@@ -14,6 +14,9 @@
         // margin-bottom: 20vh;
         h1 {
             font-family: var(--font-fam);
+            span{
+                color: var(--txt-accent);
+            }
         }
     }
 

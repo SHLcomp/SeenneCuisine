@@ -18,7 +18,7 @@ const Hero = () => {
   return (
     <div className="hero noise">
       <div className="text">
-        <h1>Enjoy your meal at Seenne Cuisine</h1>
+        <h1>Enjoy your meal at <span>Seenne Cuisine</span></h1>
         <p>Best fresh foods are made here with love just for your taste!</p>
         <div className="cta-cont">
           <button className="cta">View Our Menu</button>
