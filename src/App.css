@@ -27,6 +27,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
+  /* z-index: 100; */
   &::before {
         content: "";
         position: absolute;
@@ -37,8 +38,9 @@ body {
         /* background: url('https://images.pexels.com/photos/978487/pexels-photo-978487.jpeg'); */
         background: url('https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg');
         pointer-events: none;
-        opacity: .1;
+        opacity: .13;
         background-size: cover;
+        z-index: -100;
     }
 }
 .noise2{
