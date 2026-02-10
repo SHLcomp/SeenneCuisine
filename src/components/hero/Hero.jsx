@@ -21,7 +21,7 @@ const Hero = () => {
         <h1>Enjoy your meal at <span>Seenne Cuisine</span></h1>
         <p>Best fresh foods are made here with love just for your taste!</p>
         <div className="cta-cont">
-          <button className="cta">View Our Menu</button>
+          <a href="#foods" className="a"><button  className="cta">View Our Menu</button></a>
         </div>
       </div>
       <div className="img">

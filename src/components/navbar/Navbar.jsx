@@ -45,7 +45,7 @@ const Navbar = () => {
           <li className={chosenLink === "Contact" ? "active" : " "}>Contact</li>
         </Link>
       </ul>
-      <h4>Contact</h4>
+      <Link to={"/contact"} className="a"><h4>Contact</h4></Link>
     </nav>
   );
 };

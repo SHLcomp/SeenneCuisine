@@ -64,7 +64,7 @@ const Foods = () => {
   });
 
   return (
-    <div className="foods">
+    <div className="foods" id="foods">
       <div className="filtering">
         {/* <h1>Our Menu</h1> */}
         <ul>
