@@ -87,8 +87,8 @@ const Foods = () => {
             <img src={img2} alt="" />
           </div>
           <div className="right extraRight">
-            <img src={img1} alt="" />
-            <img src={img2} alt="" />
+            <img src={img3} alt="" />
+            <img src={img4} alt="" />
           </div>
         </div>
 
@@ -98,8 +98,8 @@ const Foods = () => {
             <img src={img4} alt="" />
           </div>
           <div className="right extraRight">
-            <img src={img3} alt="" />
-            <img src={img4} alt="" />
+            <img src={img1} alt="" />
+            <img src={img2} alt="" />
           </div>
         </div>
       </div>

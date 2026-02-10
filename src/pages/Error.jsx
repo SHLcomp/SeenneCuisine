@@ -7,6 +7,9 @@ const Error = () => {
     <div className="error">
         <Navbar />
       <div className="cont">
+        <br />
+        <br />
+        <br />
         <h1>Hello! This is Seenne.</h1>
         <h4>
           It looks like you are looking for a wrong path, or that has not been
