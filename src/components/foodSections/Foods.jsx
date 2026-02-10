@@ -118,7 +118,7 @@ const Foods = () => {
             </div>
           );
         })}
-        <a href="#">Check Menu</a>
+        <a href="#" className="cta2">Check Menu</a>
       </div>
 
       
