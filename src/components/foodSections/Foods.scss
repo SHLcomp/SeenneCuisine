@@ -9,9 +9,9 @@
     width: 100vw;
 
     a {
-        position: absolute;
-        top: 100%;
-        margin-top: 13em;
+        position: relative;
+        top: 00%;
+        margin-top: 25vh;
         color: var(--txt-accent);
     }
 
@@ -195,6 +195,11 @@
 
 @media (max-width:600px) {
     .foods {
+        a {
+            margin-top: 0vh;
+            top: 225vh;
+        }
+
         .filtering {
             margin-top: 20vh;
 
