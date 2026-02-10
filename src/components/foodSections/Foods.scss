@@ -4,14 +4,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh !important;
-    width: 100vw;
-    position: relative;
+
     a {
-        position: relative;
-        top: 00%;
-        margin-top: 25vh;
         color: var(--txt-accent);
+        margin-top: 10em; // small spacing below content
+        position: absolute;
+        top: 100%;
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 0.8em 1.5em;
+        border: 2px solid var(--txt-accent);
+        border-radius: 8px;
+        transition: 0.3s;
+
+        &:hover {
+            background: var(--txt-accent);
+            color: var(--txt-light);
+        }
     }
 
     .filtering {
@@ -146,6 +155,7 @@
         padding-inline: 4vw;
         width: 100vw;
         height: 100vh;
+        position: relative;
 
         .food-item {
             display: flex;
@@ -192,32 +202,29 @@
 }
 
 
-@media (max-width:600px) {
-    .foods {
-       
-        .filtering {
-            margin-top: 20vh;
-
-            ul {
-                gap: 1em;
-            }
-        }
-
-        .extras {
-            display: none;
-        }
-
-        .cont {
-            position: relative;
-            .food-item {
-                pointer-events: none;
-            }
-        }
-        a{
-            position: absolute;
-            top: 100vh;
-            margin-top: 87em;
-
-        }
+@media (max-width: 600px) {
+  .foods {
+    .filtering {
+      margin-top: 10vh; // smaller spacing
+      ul {
+        gap: 1em;
+      }
     }
+
+    .extras {
+      display: none;
+    }
+
+    .cont {
+        height: 100%;
+      .food-item {
+        pointer-events: none;
+      }
+    }
+
+    a {
+      position: absolute; 
+      margin-top: 2em; // simple spacing from content
+    }
+  }
 }

@@ -118,9 +118,10 @@ const Foods = () => {
             </div>
           );
         })}
+        <a href="#">Check Menu</a>
       </div>
 
-      <a href="#">Check Menu</a>
+      
     </div>
   );
 };
